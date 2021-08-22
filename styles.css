@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: hsl(0, 0%, 95%);
+}
+
+.card {
+    padding: 0 3em;
+    width: 13rem;
+    min-height: 450px ;
+    
+}
+
+.card--yellow {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.card--blue {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.card--green {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.card__title {
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+}
+
+.card__body {
+    line-height: 1.5em;
+    padding-bottom: 2em;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.card__button {
+    background-color: hsl(0, 0%, 95%);
+    border: none;
+    font-family: 'Lexend Deca', sans-serif;
+    padding: .75em 1.5em;
+    border-radius: 100px;
+    width: 10em;
+    
+    
+    
+}
+
+.yellow-button {
+    color: hsl(31, 77%, 52%);
+}
+
+.blue-button {
+    color: hsl(184, 100%, 22%);
+}
+
+.green-button {
+    color: hsl(179, 100%, 13%);
+}
+
+.card__icon {
+    padding-top: 1.25em;
+}
+
+/*active states*/
+
+.card__button:hover {
+    color: white;
+    border: solid white 1px ;
+}
+
+.yellow-button:hover {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.blue-button:hover {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.green-button:hover {
+    background-color: hsl(179, 100%, 13%);
+}
+
+
+/* mobile design */
+
+@media only screen and (max-width: 375px) {
+    body {
+        flex-direction: column;
+        font-size: 15px;
+        margin: 0 auto;
+    }
+
+    .card {
+        padding: 0 3em;
+        margin: 0 18em; 
+        width: 25ch;
+        min-height: 25em;
+        margin: 0 auto;
+        
+    }
+
+    .card--yellow {
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+    
+    
+    .card--green {
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .card__icon {
+        padding-top: 1.75em;
+    }
+
+
+}
